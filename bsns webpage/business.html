@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: blue;
+            display: flex;
+            align-items: center;   
+            padding:15px 50px;
+        }
+        nav img{
+            height: 28px;
+           
+        }
+        nav ul{
+         list-style: none;
+         color: white;
+         display: flex;
+         gap: 25px;
+         margin-right: 100px;
+        }
+        nav a{
+            display: inline-block;
+            text-decoration: none; 
+            color: rgb(233, 230, 230);
+        }
+        .main{
+            background-color: blue;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 63px;
+            flex-wrap: wrap; 
+        } 
+        .main-text{
+            max-width:50%;
+            flex:1;
+        }
+        .main-text h1{
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .main-text p{
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .main-text .buttons{
+        display: flex;
+        gap:15px;
+        }
+        .main-text .buttons input{
+            padding: 10px 20px;
+            color:blue;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .main-text .buttons a{
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+        }
+       .main-image img{
+        max-width: 100%;
+        border-radius: 5px;
+       }
+       .second {
+        display: flex;
+        align-items: center;
+        padding: 40px 0px 0px 40px;
+        justify-content: space-around;
+        gap: 50px;
+        flex-wrap: wrap;
+        
+       }
+       .second-image {
+        width:50%;
+       }
+       .second-image img{
+        width: 100%;
+       }
+      
+       .second-text p{
+        margin-bottom: 20px;
+       }
+       .second-text{
+        max-width:50%;
+        flex: 1;
+     
+       }
+       .second-text h2{
+        margin-bottom: 20px;
+       }
+      .second-tabs{
+        background-color: lightgrey;
+        width: 80%;
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px 0;
+        flex-wrap: wrap;
+      }
+     
+    
+       .second-tabs input{
+        padding: 10px 5px;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        margin: 0px 10px 0px 10px;
+       }
+       .second-tabs input.active{
+        background-color: blue;
+        color: white;
+       }
+     
+    
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <ul><li></li><img src="bsnslogo.png" alt="business">
+        <h2>Business</h2></li></ul>
+        <ul>
+           <li><a href="">Home</a></li>
+           <li><a href="">Services</a></li>
+           <li><a href="">Portfolio</a></li>
+           <li><a href="">Pricing</a></li>
+           <li><a href="">Team</a></li>
+           <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="main-text"><h1>Corporate & Business Site Template By Ayro UI</h1>
+           <p>We are a digital agency that helps brands to achieve their business otcomes. We see technology as a tool to create amazing things</p>
+           <div class="buttons">
+             <input type="button" value="GET STARTED">
+             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+            </svg>
+            <a href="">Watch Intro</a>
+           </div>
+        </div>
+    <div class="main-image">
+        <img src="bsns.webp" alt="">
+    </div>
+</div>
+<div class="second">
+    <div class="second-image">
+        <img src="busines.jpg" alt="business">
+    </div>
+    <div class="second-text">
+        <p>OUR STORY<p>
+        <h2>Our team comes with the experience and knowledge</h2>
+        <div class="second-tabs">
+            <div><input type="button" class="active" value="Who We Are"></div>
+            <div><input type="button"value="Our Vision"> </div>
+            <div><input type="button"value="Our History"> </div>
+        </div>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has more-or-less normal distribution of letters looks like readable english</p>
+        <div>
+            <p>There are many variations of passages of Lorem Ipsum available,but the majority have in some form by injected humour</p>
+        </div>
+    </div>
+   
+</div>
+</body>
+</html>
