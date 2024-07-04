@@ -14,6 +14,7 @@
             height: 100%;
             margin: 0;
             padding: 0;
+            
         }
         nav{
             background-color: blue;
@@ -45,10 +46,11 @@
             align-items: center;
             padding: 63px;
             flex-wrap: wrap; 
-        } 
+        }
         .main-text{
             max-width:50%;
             flex:1;
+            flex-wrap: wrap;
         }
         .main-text h1{
             margin-bottom: 20px;
@@ -79,8 +81,14 @@
             padding: 10px;
         }
        .main-image img{
-        max-width: 100%;
+        width: 100%;
         border-radius: 5px;
+       
+       }
+       @media  screen and (max-width: 600px) {
+         .main-image img, .main-text .buttons a, .main-text .buttons  {
+            width: 100%;
+        }
        }
        .second {
         display: flex;
@@ -118,8 +126,6 @@
         padding: 10px 0;
         flex-wrap: wrap;
       }
-     
-    
        .second-tabs input{
         padding: 10px 5px;
         background-color: white;

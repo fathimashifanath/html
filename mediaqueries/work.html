@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+           box-sizing: border-box;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            padding:  0px 4px;
+        }
+        .column{
+            flex: 25%;
+            max-width: 25%;
+            padding:  0px 4px;
+        }
+        .column img{
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        @media screen and (max-width:800px){
+            .column{
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        @media screen and (max-width:600px){
+            .column{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <img src="img1.jpg" style="width: 100%;">
+            <img src="img2.jpg" style="width: 100%;">
+            <img src="img3.jpg" style="width: 100%;">
+            <img src="img4.jpg" style="width: 100%;">
+            <img src="img5.jpg" style="width: 100%;">
+            <img src="img6.jpg" style="width: 100%;">
+            
+        </div>
+        <div class="column">
+            <img src="img7.jpg" style="width: 100%;">
+            <img src="img8.jpg" style="width: 100%;">
+            <img src="img9.jpg" style="width: 100%;">
+            <img src="img10.jpg" style="width: 100%;">
+            <img src="img1.jpg" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="img2.jpg" style="width: 100%;">
+            <img src="img3.jpg" style="width: 100%;">
+            <img src="img4.jpg" style="width: 100%;">
+            <img src="img5.jpg" style="width: 100%;">
+            <img src="img6.jpg" style="width: 100%;">
+            <img src="img7.jpg" style="width: 100%;">
+            <img src="img8.jpg" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="img9.jpg" style="width: 100%;">
+            <img src="img10.jpg" style="width: 100%;">
+            <img src="img1.jpg" style="width: 100%;">
+            <img src="img2.jpg" style="width: 100%;">
+            <img src="img3.jpg" style="width: 100%;">
+            <img src="img4.jpg" style="width: 100%;">
+        </div>
+    </div>
+</body>
+</html>
