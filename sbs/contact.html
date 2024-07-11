@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .hidden .heading{
+         margin-bottom: 100px;
+         text-align: center;   
+        }
+        .hidden .a{
+            display: flex;
+        }
+        .hidden .text {
+            flex: 1;
+            padding-left: 20px;
+            width: 50%;
+        }
+        .hidden .text input[type="text"]{
+            width: 40%;
+            height: 60px;
+        }
+        .text select,.text input[type="email"]{
+            height: 70px;
+        }
+        .text select,.text textarea,.text input[type="email"]{
+          width: 80%;
+         
+        }
+        .hidden .text input[type="text"],[type="email"],
+        .text select,.text textarea{
+            padding: 10px 0px;
+            margin-bottom: 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .hidden .img{
+           width: 50%;
+            padding: 0px 10px;
+            height: 700px;
+        }
+        .hidden button{
+            background-color: red;
+            padding: 10px;
+            color: white;
+            width: 150px;
+            border: none;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="hidden" id="hidden">
+        <div class="heading"><h1>CONTACT US</h1></div>
+        <div class="a">
+        <div class="text">
+        <form action="">
+            <input type="text" placeholder="Name*" required>
+            <input type="text" placeholder="Phone Number*" required> 
+            <input type="email" placeholder="Email*" required >
+            <select name="sub" id="sub"> 
+                <option value="">Select Subject</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+            </select>
+            <textarea  placeholder="Message"rows="10"></textarea><br>
+            <button>SEND</button>
+        </form>
+    </div>
+    <div class="img">
+    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
