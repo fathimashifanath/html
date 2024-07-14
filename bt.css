@@ -1,0 +1,53 @@
+.main div{
+    width: 31%;
+}
+img{
+    height:280px;
+    width:320px;
+}
+
+
+@media (max-width: 768px) {
+    .align-items-center.d-flex.justify-content-around.mt-5.p-5 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main div {
+        width: 80%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-6 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .d-inline-block.px-5.col-6 {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main div {
+        width: 100%;
+    }
+
+    form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .d-inline-block.px-5.col-6 {
+        padding: 0 10px;
+    }
+}
